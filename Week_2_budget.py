@@ -1,4 +1,4 @@
-# Collect inputs
+
 name = input("Enter your name: ")
 income = int(input("Enter your monthly net income: "))
 
