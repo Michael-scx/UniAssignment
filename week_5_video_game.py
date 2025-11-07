@@ -4,7 +4,6 @@ def find_item_index(item_names, item_name):
             return i
     return -1
 
-
 def process_inventory_events(initial_items, initial_quantities, events):
     items = initial_items[:]          
     quantities = initial_quantities[:] 
@@ -45,8 +44,6 @@ def process_inventory_events(initial_items, initial_quantities, events):
                 quantities.remove(qty_value)
 
     return items, quantities
-
-
 
 items = ["Sword", "Health Potion", "Gold Coin"]
 quantities = [1, 5, 100]
