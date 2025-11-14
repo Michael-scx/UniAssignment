@@ -1,14 +1,14 @@
 def calculate_average_enrollment(enrollment_list):
-    if len(enrollment_list) == 0:
+    if len(enrollment_list) ==0:
         return 0
-    total = 0
+    total =0
     for num in enrollment_list:
         total+=num
 
     avg = total/len(enrollment_list)
     return avg
 def find_most_popular_course(course_data):
-    highest_avg = -1
+    highest_avg =-1
     best_course = ""
 
     for item in course_data:
@@ -46,8 +46,8 @@ def get_courses_in_department(course_data, dept_name):
     return result
 
 def get_department_enrollment_summary(course_data):
-    departments = []
-    totals = []
+    departments =[]
+    totals =[]
 
     for item in course_data:
         course_code = item[0]
@@ -57,7 +57,7 @@ def get_department_enrollment_summary(course_data):
         
         index = -1
         for i in range(len(departments)):
-            if departments[i] == department:
+            if departments[i] ==department:
                 index = i
                 break
 
@@ -77,11 +77,11 @@ def get_department_enrollment_summary(course_data):
     n = len(departments)
     for i in range(n):
         for j in range(0, n-i-1):
-            if departments[j] > departments[j + 1]:
+            if departments[j] >departments[j + 1]:
                 
                 temp = departments[j]
-                departments[j] = departments[j+1]
-                departments[j + 1] = temp
+                departments[j] =departments[j+1]
+                departments[j + 1]= temp
 
                 
                 temp2 = totals[j]
