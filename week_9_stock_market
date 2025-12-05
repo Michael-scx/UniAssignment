@@ -19,14 +19,10 @@ def filter_signals(signals, min_strength):
         if len(line) == 0:
             continue
 
-        
         parts = line.split("|")
 
-        
         if len(parts) < 3:
             continue
-
-        
         left = parts[0]  
         time = parts[1]  
         note = parts[2].strip()
@@ -36,11 +32,7 @@ def filter_signals(signals, min_strength):
         close_br = left.index("]")
 
         signal = left[open_br+1:close_br]
-
-        
         ticker = left[close_br+2:].strip()
-
-        
         if strength_level(signal) >= min_level:
             summary = signal + " (" + ticker + "): " + note
             result.append(summary)
