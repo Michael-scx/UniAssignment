@@ -1,0 +1,7 @@
+Sarah,Yoga,60,0
+Mike,Crossfit,40,55
+Emily,Running,90,10
+David,Yoga,45,15
+Invalid,Entry,No,Numbers
+Chris,Crossfit,50,50
+Anna,Running,30,0
